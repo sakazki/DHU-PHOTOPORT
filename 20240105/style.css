@@ -1,0 +1,59 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://plus.unsplash.com/premium_photo-1677101221533-52b45823a2dc?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    opacity: 0.85;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(194, 186, 186);
+}
+
+.container h1 {
+    font-size: 60px;
+}
+.container p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.container :first-child{
+    color: rgb(223, 205, 205);
+}
+.container h1 :nth-child(2){
+    margin-bottom: 20px;
+}
+.main .main-image {
+    z-index: 9;
+    display: absolute;
+    right: 8;
+    width: 600px;
+    height: 100%;
+}
+.main-image > img {
+
+}
